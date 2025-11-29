@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O naszym badaniu</title>
+<style>html.loading {visibility: hidden;}</style>
+<script src="detect.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+<h1>Społeczne mikroeksperymenty - studenci w działaniu</h1>
+</div>
+<div class="container">
+<div class="wstep">
+    Dziękujemy, że śledzicie nasz projekt mikroeksperymentów.<br>
+    Wierzymy, że najlepszym sposobem zrozumienia świata społecznego jest uczestnictwo w nim z empatią, uważnością i refleksją dlatego chcemy pokazywać Wam, jak wygląda to w praktyce.
+    </div>
+    <div class="wstep 2"><ul>
+    Dzięki mini-eksperymentom studenci:
+    <li>uczą się formułować problemy badawcze i hipotezy,</li>
+    <li>poznają metodologię badań społecznych,</li>
+    <li>rozwijają umiejętność obserwacji i analizy zachowań,</li>
+    <li>doświadczają, jak teoria psychologii społecznej „ożywa” w codziennym życiu.</li>
+    </ul></div>
+    </div>
+    <h3>Cieszymy się, że możecie to z nami obserwować.</h3>
+<div class="container-row">
+<div class="temat">
+    <h2 class="rozwin">Atrakcyjność osoby potrzebującej, a gotowość do udzielania jej pomocy</h2>
+    <div class="tekst">
+    <p>Atrakcyjność fizyczna stanowi kluczowy czynnik wpływający na percepcję społeczną i zachowania interpersonalne.<br>
+        Zjawisko to wpisuje się w tzw. efekt aureoli, polegający na tym, że pozytywna cecha prowadzi do przypisywania jednostce innych korzystnych właściwości, takich jak uczciwość, sympatyczność czy wiarygodność.<br>
+        Celem eksperymentu jest zbadanie, w jakim stopniu atrakcyjność zewnętrzna wpływa na chęć udzielenia pomocy finansowej przez przypadkowe osoby. W badaniu ta sama osoba dwukrotnie poprosi kilku przechodniów o pomoc (brak złotówki na bilet powrotny) raz w sytuacji, gdy jest ubrana i uczesana w sposób atrakcyjny, a raz w sposób celowo zaniedbany.<br>
+        Porównanie reakcji przechodniów w obu sytuacjach pozwoli ocenić, czy wygląd zewnętrzny znacząco wpływa na gotowość do pomocy.</p>
+</div></div>
+<div class="temat">
+    <h2 class="rozwin">Badanie tempa reakcji na uporczywe przeszkadzanie</h2>
+    <div class="tekst">
+    <p>Celem eksperymentu jest zbadanie reakcji uczestników na uporczywe przeszkadzanie podczas wykonywania zadania wymagającego koncentracji. Osoba badana realizuje krótkie zadanie poznawcze (np. układanie prostych sekwencji, rozwiązywanie łamigłówek), podczas gdy asystent w kontrolowany i powtarzalny sposób wprowadza zakłócenia - np. zadaje nieistotne pytania, komentuje, hałasuje lub inicjuje drobne przerwy w pracy. Rejestrowane są zachowania uczestnika (np. próby ignorowania, reakcje werbalne, oznaki frustracji, modyfikacje strategii działania) oraz czas wykonania zadania. Eksperyment pozwala ocenić, jak uporczywe przeszkadzanie wpływa na efektywność poznawczą, regulację emocji i strategie radzenia sobie.</p>
+</div></div></div>
+<div class="container-row">
+<div class="temat">
+    <h2 class="rozwin">Zachowania prospołeczne</h2>
+    <div class="tekst">
+    <p>Celem naszego eksperymentu jest zrozumienie, w jaki sposób wiek i płeć wpływają na skłonność do zachowań prospołecznych, czyli działań ukierunkowanych na pomoc innym ludziom. Chcemy sprawdzić, czy istnieją różnice między młodszymi i starszymi uczestnikami oraz pomiędzy kobietami i mężczyznami w gotowości do niesienia pomocy w różnych sytuacjach społecznych.</p>
+</div></div>
+
+<div class="temat">
+    <h2 class="rozwin">Nieświadome naśladowanie zachowań społecznych</h2>
+    <div class="tekst">
+    <p>Grupa kilku osób siada w stołówce UKSW i po chwili trzy osoby z nich zaczynają śpiewać „Sto lat", a reszta stopniowo dołącza. W tym czasie obserwujemy reakcje osób postronnych czy ktoś przyłączy się do śpiewu, zwróci uwagę lub całkowicie zignoruje sytuację. Po zakończeniu krótkiej akcji zapisujemy, ile osób w jakikolwiek sposób zareagowało.</p>
+</div></div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const headers = document.querySelectorAll('.rozwin');
+    
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const row = header.closest('.container-row');
+                row.querySelectorAll('.temat').forEach(temat => {
+                    temat.classList.toggle('active');
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
