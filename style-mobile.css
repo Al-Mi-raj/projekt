@@ -60,6 +60,12 @@ h3{ font-size: 1.2rem; text-align:center; margin: 0.5rem 0; }
     display: block;
     padding: 12px;
 }
+.container1{
+    display: block;
+    padding: 12px;
+    margin: 0 auto;
+    max-width: auto;
+}
 .temat {
     position: relative;
 }
