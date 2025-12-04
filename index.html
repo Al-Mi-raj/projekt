@@ -70,19 +70,7 @@
     
         headers.forEach(header => {
             header.addEventListener('click', () => {
-                const row = header.closest('.container-row');
-                row.querySelectorAll('.temat').forEach(temat => {
-                    temat.classList.toggle('active');
-                });
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-        const headers = document.querySelectorAll('.rozwin');
-    
-        headers.forEach(header => {
-            header.addEventListener('click', () => {
-                const row = header.closest('.container1');
+                const row = header.closest('.container-row, .container1');
                 row.querySelectorAll('.temat').forEach(temat => {
                     temat.classList.toggle('active');
                 });
