@@ -29,7 +29,7 @@
     };
   
     link.onerror = () => {
-      console.error('Failed to load stylesheet', sheetHref);
+      console.error('Failed to load the page', sheetHref);
       document.documentElement.classList.remove('loading');
     };
   
