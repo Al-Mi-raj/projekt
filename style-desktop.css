@@ -121,3 +121,11 @@ h3{
 .temat.active .tekst {
     max-height: 500px;
 }
+.tekst a {
+    margin: 10px 0;
+    text-align: center;
+}
+.tekst1{
+    margin: 10px 0;
+    text-align: center;
+}
